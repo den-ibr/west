@@ -22,7 +22,7 @@ const CardView = function() {
     CardView.prototype.updateData = function ({name, descriptions, image, currentPower, maxPower}) {
         this.name.innerText = name;
         if (image) {
-            this.image.setAttribute('src', `images/${image}`);
+            this.image.setAttribute('src', `${image}`);
         } else {
             this.image = null;
         }
